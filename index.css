@@ -1,0 +1,196 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 64px;
+}
+
+.main-window {
+  width: 744px;
+}
+
+.сategory {
+  display: flex;
+}
+
+h1,
+h2 {
+  user-select: none;
+  font-family: Arial;
+  font-size: 22px;
+}
+
+p,
+h2 {
+  margin: 0;
+  font-family: Arial;
+}
+
+.catalog,
+.favorite {
+  width: 372px;
+  height: 55px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.catalog-active {
+  background-color: #edf9ff;
+  color: #117dc1;
+}
+
+.favorite-active {
+  background-color: #edf9ff;
+  color: #117dc1;
+}
+
+.added-artist {
+  display: flex;
+  align-items: center;
+  width: 744px;
+  height: 80px;
+}
+
+.added-album {
+  display: flex;
+  align-items: center;
+  width: 744px;
+  height: 80px;
+}
+.albums {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+.added-album img {
+  margin-left: 50px;
+}
+
+.added-photo {
+  padding: 0 105px;
+  display: flex;
+  gap: 42px;
+  flex-wrap: wrap;
+}
+
+img {
+  margin-left: 2px;
+  margin-right: 25px;
+  width: 32px;
+  height: 32px;
+}
+
+.photo {
+  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+}
+
+.star-empty {
+  position: relative;
+  left: 110px;
+  right: 8px;
+  top: 8px;
+}
+
+.error-img {
+  width: 264px;
+  height: 207px;
+}
+
+.catalog-error {
+  display: flex;
+  text-align: center;
+  margin-top: 204px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.catalog-loader {
+  margin-left: 348px;
+  margin-top: 420px;
+}
+
+.loader {
+  margin: 136px auto;
+}
+
+.error {
+  margin-bottom: 61px;
+  margin-top: 61px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorites-list {
+  box-sizing: border-box;
+  padding: 65px 105px;
+  display: flex;
+  gap: 41px;
+  flex-wrap: wrap;
+  width: 744px;
+}
+
+.favorite-photo {
+  width: 150px;
+}
+
+.favorite-empty {
+  display: flex;
+  text-align: center;
+  margin-top: 204px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal {
+  display: none;
+  width: 600px;
+  max-width: 100%;
+  height: 600px;
+  max-height: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.closed {
+  display: block;
+}
+
+.close-input {
+  position: fixed;
+  right: 42px;
+  top: 30px;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
